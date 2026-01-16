@@ -1,0 +1,27 @@
+/* Style de base pour l'interface admin */
+.wrap h1.wp-heading-inline {
+    margin-right: 10px;
+}
+
+.button-link-delete {
+    color: #a00;
+}
+
+.button-link-delete:hover {
+    color: #dc3232;
+}
+
+/* Responsive */
+@media screen and (max-width: 782px) {
+    .wp-list-table td:not(.column-primary)::before {
+        content: attr(data-colname);
+        font-weight: 500;
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    .wp-list-table td {
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+}
